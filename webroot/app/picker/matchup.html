@@ -1,0 +1,9 @@
+<img class="img-rounded matchupcellimg" src="{{heroes[heroMatchup.heroIndex].image}}" width="80">
+<span class="hidden-md-down">{{heroes[heroMatchup.heroIndex].localized_name}}</span>
+<div class="pull-right text-right matchupcelldata">
+	<abbr class="initialism text-right" title="Win rate">{{heroMatchup.winrate.toFixed(2)}}%</abbr>
+	<br>
+	<abbr class="initialism text-right" title="Advantage">{{formatAdvantage(heroMatchup.advantage)}}%</abbr>
+	<br>
+	<abbr class="initialism text-right matchupcelldataherotype" title="C = Carry (hard); J = Jungler; T = Tank">{{heroMatchup.heroType}}</abbr>
+</div>

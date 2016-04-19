@@ -55,6 +55,15 @@
 					this.heroes[i].image = 'http://cdn.dota2.com/apps/dota2/images/heroes/' + this.heroes[i].name + '_sb.png';
 					this.heroes[i].link = 'http://dota2.gamepedia.com/' + this.heroes[i].localized_name;
 					var heroDotamax = _.find(heroesDotamax, {'name': this.heroes[i].name});
+					heroDotamax.items_all.sort(function(a, b) {
+						return b.matches - a.matches;
+					});
+					heroDotamax.items_high.sort(function(a, b) {
+						return b.matches - a.matches;
+					});
+					heroDotamax.items_pro.sort(function(a, b) {
+						return b.matches - a.matches;
+					});
 					this.heroes[i].zh = heroDotamax.zh;
 					this.heroes[i].winrate_all = heroDotamax.winrate_all;
 					this.heroes[i].winrate_high = heroDotamax.winrate_high;
@@ -68,18 +77,15 @@
 					this.heroes[i].xpm_all = heroDotamax.xpm_all;
 					this.heroes[i].xpm_high = heroDotamax.xpm_high;
 					this.heroes[i].xpm_pro = heroDotamax.xpm_pro;
+					this.heroes[i].enemies_all = heroDotamax.enemies_all;
+					this.heroes[i].enemies_high = heroDotamax.enemies_high;
+					this.heroes[i].enemies_pro = heroDotamax.enemies_pro;
+					this.heroes[i].teammates_all = heroDotamax.teammates_all;
+					this.heroes[i].teammates_high = heroDotamax.teammates_high;
+					this.heroes[i].teammates_pro = heroDotamax.teammates_pro;
 					this.heroes[i].items_all = heroDotamax.items_all;
 					this.heroes[i].items_high = heroDotamax.items_high;
 					this.heroes[i].items_pro = heroDotamax.items_pro;
-					this.heroes[i].items_all.sort(function(a, b) {
-						return b.matches - a.matches;
-					});
-					this.heroes[i].items_high.sort(function(a, b) {
-						return b.matches - a.matches;
-					});
-					this.heroes[i].items_pro.sort(function(a, b) {
-						return b.matches - a.matches;
-					});
 				}
 				var items = itemService.items;
 				itemService.items$.subscribe(d => {

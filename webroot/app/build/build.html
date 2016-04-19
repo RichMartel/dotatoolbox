@@ -54,7 +54,7 @@
 					<a *ngFor="#item of items_high_late" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_high * 100).toFixed(0)}}%"></a>
 				</div>
 			</div>
-			<div class="card card-block col-lg-4 col-md-4 col-sm-4 col-xs-1">
+			<div class="card card-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<div class="clearfix">
 					<h3 class="pull-left">Pro skill</h3>
 					<div class="pull-right">
@@ -88,7 +88,7 @@
 					<li>This is an automatic item build creator for the game <a href="http://blog.dota2.com/">Dota 2</a></li>
 					<li>It uses statistics (popularity, winrates, etc.) to create the item build listings</li>
 					<li>There are 3 builds shown for each hero: &quot;All skill&quot; (any MMR), &quot;High skill&quot; (> 3800 MMR), &quot;Pro skill&quot; (tournaments)</li>
-					<li>It budgets the hero\'s ability to buy items based on the average GPM for that hero, at that skill, by the 35 minute mark</li>
+					<li>It budgets the hero's ability to buy items based on the average GPM for that hero, at that skill, by the 35 minute mark</li>
 				</ul>
 				<h4>How to use?</h4>
 				<ul style="text-shadow: none;">

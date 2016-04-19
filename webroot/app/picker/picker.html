@@ -1,7 +1,99 @@
 <div class="container-fluid">
-	<div class="jumbotron">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Under_construction_icon-orange.svg" class="center-block" style="box-shadow: none; height: 200px;">
-		<p>The Team picker is in process of being rewritten. Until that is done, please go here:</p>
-		<p><a href="https://richmartel.github.io/DotaTeamPicker/">Team picker on Github pages</a></p>
+	<div class="row">
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-5">
+			<div class="herolistcontainer">
+				<div>
+					<input type="search" id="filterInput" class="form-control herosearch" placeholder="Search" autofocus [(ngModel)]="filterString" *ngIf="!touchBrowser">
+				</div>
+				<ul class="nav nav-pills nav-stacked herolist">
+					<li class="nav-item" *ngFor="#hero of heroes | filterHeroes:filterString">
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-success" title="Add to my team" (click)="addFriendsSelected(hero)"><i class="fa fa-plus"></i></button>
+							<span class="btn herolistimg" style="background-image: url({{hero.image}});" title="{{hero.localized_name}}"><span class="herolistimgtext">{{hero.localized_name}}</span></span>
+							<button type="button" class="btn btn-danger" title="Add to enemy team" (click)="addEnemiesSelected(hero)"><i class="fa fa-plus"></i></button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-10 col-md-9 col-sm-8 col-xs-7" [hidden]="enemiesSelected.length < 1 && friendsSelected.length < 1">
+			<div class="row">
+				<button class="btn btn-primary center-block" (click)="removeAllSelected()">Clear</button>
+			</div>
+			<br>
+			<div class="row" style="min-height: {{imageHeight}}px;">
+				<div class="col-md-6 col-xs-12">
+					<div><h6 class="text-danger">Enemy team:</h6></div>
+					<img *ngFor="#hero of enemiesSelected" (click)="removeEnemiesSelected(hero)" src="{{hero.image}}" class="img" width="{{imageWidth}}" title="Click to remove">
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div><h6 class="text-success">My team:</h6></div>
+					<img *ngFor="#hero of friendsSelected" (click)="removeFriendsSelected(hero)" src="{{hero.image}}" class="img" width="{{imageWidth}}" title="Click to remove">
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<h5 class="matchuprowtitle">Side/core<span class="hidden-md-down"> heroes</span></h5>
+					<div class="list-group">
+						<div *ngFor="#heroMatchup of coreMatchups" class="list-group-item matchupcell {{heroMatchup.class}}">
+							<dt-matchup [heroMatchup]="heroMatchup"></dt-matchup>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h5 style="text-align: center;">Mid<span class="hidden-md-down"> heroes</span></h5>
+					<div class="list-group">
+						<div *ngFor="#heroMatchup of midMatchups" class="list-group-item matchupcell {{heroMatchup.class}}">
+							<dt-matchup [heroMatchup]="heroMatchup"></dt-matchup>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h5 style="text-align: center;">Support<span class="hidden-md-down"> heroes</span></h5>
+					<div class="list-group">
+						<div *ngFor="#heroMatchup of supportMatchups" class="list-group-item matchupcell {{heroMatchup.class}}">
+							<dt-matchup [heroMatchup]="heroMatchup"></dt-matchup>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-10 col-md-9 col-sm-8 col-xs-7" [hidden]="enemiesSelected.length > 0 || friendsSelected.length > 0">
+			<div class="jumbotron">
+				<div class="container-fluid">
+					<h1 style="text-align: center;">Team picker</h1>
+					<br>
+					<h4>What is this?</h4>
+					<ul style="text-shadow: none;">
+						<li>Most apps like this one are referred to as &quot;counter-pickers&quot; for the game <a href="http://blog.dota2.com/">Dota 2</a></li>
+						<li>It is a way to build the best possible team by countering the enemy picks</li>
+						<li>This app also takes teammate combinations into account in order to pick the most effective team</li>
+					</ul>
+					<h4>How to use?</h4>
+					<ul style="text-shadow: none;">
+						<li>When the enemy picks a hero, click the <span class="text-danger">red [+] button</span> to add that hero to the enemy team</li>
+						<li>When a teammate picks a hero, click the <span class="text-success">green [+] button</span> to add that hero to your team</li>
+						<li>You can remove individual heroes by clicking on their images in the team selection area</li>
+						<li>The main matchup area will show the best picks for side/core, mid, and support heroes</li>
+						<li>Remember, it will be up to you to pick the right hero for your situation, this app only provides general statistics</li>
+						<li><span class="text-info">Blue = Great picks</span>, <span class="text-success">Green = Good picks</span>, White = Decent picks, <span class="text-warning">Yellow = Possibe bad picks</span>, <span class="text-danger">Red = Very bad picks</span></li>
+					</ul>
+					<h4>Why use this counter-picker over others?</h4>
+					<ul style="text-shadow: none;">
+						<li>Its fast</li>
+						<li>Its the only counter picker I have found that takes the winrate for that hero matchup into account (most counter-pickers only use advantages)</li>
+						<li>It has a unique sorting method that takes both winrates and advantages into account to make sure that the best picks show up at the top</li>
+						<li>Teammate lineup is weighted half as much as enemy lineup in order to make sure the focus is on countering the enmies picks</li>
+						<li>All skills, high skills, and pro skills are all factored into the results</li>
+						<li>Enemy carries are weighted more than other heroes so that the counters will be more focused around that carry</li>
+						<li>It color-highlights good and bad picks to make it easy to notice</li>
+						<li>On desktops, you can search via the Dota 2 name (Spirit Breaker), the Dota 1 names (Barathrum), or the abbreviations (sb)</li>
+						<li>It works on your tablet or even smartphone (although phone is not recommended)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
