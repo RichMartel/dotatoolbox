@@ -1,0 +1,921 @@
+[
+	{
+		"name": "antimage",
+		"alt_names": [
+			"Magina",
+			"am"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "axe",
+		"alt_names": [
+			"Mogul Khan"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "bane",
+		"alt_names": [
+			"Atropos"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "bloodseeker",
+		"alt_names": [
+			"Strygwyr",
+			"bs"
+		],
+		"primary_attr": 2,
+		"jungle": true
+	},
+	{
+		"name": "crystal_maiden",
+		"alt_names": [
+			"Rylai Crestfall",
+			"cm"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "drow_ranger",
+		"alt_names": [
+			"Travex",
+			"dr"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "earthshaker",
+		"alt_names": [
+			"Raigor Stonehoof",
+			"es"
+		],
+		"primary_attr": 1,
+		"support": true
+	},
+	{
+		"name": "juggernaut",
+		"alt_names": [
+			"Yurnero"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "mirana",
+		"alt_names": [
+			"Priestess of the Moon",
+			"Mirana Nightshade"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "nevermore",
+		"alt_names": [
+			"sf"
+		],
+		"primary_attr": 2,
+		"mid": true
+	},
+	{
+		"name": "morphling",
+		"alt_names": [
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "phantom_lancer",
+		"alt_names": [
+			"Azwraith",
+			"pl"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "puck",
+		"alt_names": [
+			"Faerie Dragon"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "pudge",
+		"alt_names": [
+			"Butcher"
+		],
+		"primary_attr": 1,
+		"mid": true
+	},
+	{
+		"name": "razor",
+		"alt_names": [
+			"Lightning Revenant"
+		],
+		"primary_attr": 2,
+		"mid": true
+	},
+	{
+		"name": "sand_king",
+		"alt_names": [
+			"Crixalis",
+			"sk"
+		],
+		"primary_attr": 1,
+		"jungle": true
+	},
+	{
+		"name": "storm_spirit",
+		"alt_names": [
+			"Raijin Thunderkeg",
+			"ss"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "sven",
+		"alt_names": [
+			"Rogue Knight"
+		],
+		"primary_attr": 1,
+		"carry": true
+	},
+	{
+		"name": "tiny",
+		"alt_names": [
+			"Stone Giant"
+		],
+		"primary_attr": 1,
+		"carry": true
+	},
+	{
+		"name": "vengefulspirit",
+		"alt_names": [
+			"Shendelzare Silkwood",
+			"vs"
+		],
+		"primary_attr": 2,
+		"support": true
+	},
+	{
+		"name": "windrunner",
+		"alt_names": [
+			"Alleria",
+			"wr"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "zuus",
+		"alt_names": [
+			"Lord of Olympus"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "kunkka",
+		"alt_names": [
+			"Admiral",
+			"Daelin Proudmoore"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "lina",
+		"alt_names": [
+			"Slayer"
+		],
+		"primary_attr": 2,
+		"mid": true
+	},
+	{
+		"name": "lich",
+		"alt_names": [
+			"Kelthuzad"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "lion",
+		"alt_names": [
+			"Demon Witch"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "shadow_shaman",
+		"alt_names": [
+			"Rhasta",
+			"ss"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "slardar",
+		"alt_names": [
+			"Slithereen Guard"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "tidehunter",
+		"alt_names": [
+			"Leviathan",
+			"th"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "witch_doctor",
+		"alt_names": [
+			"Voljin",
+			"wd"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "riki",
+		"alt_names": [
+			"Stealth Assassin"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "enigma",
+		"alt_names": [
+			"Darchrow"
+		],
+		"primary_attr": 3,
+		"jungle": true
+	},
+	{
+		"name": "tinker",
+		"alt_names": [
+			"Boush"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "sniper",
+		"alt_names": [
+			"Dwarven Sniper",
+			"Kardel Sharpeye"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "necrolyte",
+		"alt_names": [
+			"Rotundjere"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "warlock",
+		"alt_names": [
+			"Demnok Lannik"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "beastmaster",
+		"alt_names": [
+			"Rexxar",
+			"bm"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "queenofpain",
+		"alt_names": [
+			"Akasha",
+			"qop"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "venomancer",
+		"alt_names": [
+			"Lesale Deathbringer"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "faceless_void",
+		"alt_names": [
+			"Darkterror",
+			"fv"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "skeleton_king",
+		"alt_names": [
+			"King Leoric",
+			"wk"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "death_prophet",
+		"alt_names": [
+			"Krobelus",
+			"dp"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "phantom_assassin",
+		"alt_names": [
+			"Mortred",
+			"pa"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "pugna",
+		"alt_names": [
+			"Oblivion"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "templar_assassin",
+		"alt_names": [
+			"Lanaya",
+			"ta"
+		],
+		"primary_attr": 2,
+		"mid": true
+	},
+	{
+		"name": "viper",
+		"alt_names": [
+			"Netherdrake"
+		],
+		"primary_attr": 2,
+		"mid": true
+	},
+	{
+		"name": "luna",
+		"alt_names": [
+			"Moon Rider"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "dragon_knight",
+		"alt_names": [
+			"Knight Davion",
+			"dk"
+		],
+		"primary_attr": 1,
+		"mid": true,
+		"tank": true
+	},
+	{
+		"name": "dazzle",
+		"alt_names": [
+			"Shadow Priest"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "rattletrap",
+		"alt_names": [
+			"cw"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "leshrac",
+		"alt_names": [
+			"Tormented Soul"
+		],
+		"primary_attr": 3,
+		"mid": true
+	},
+	{
+		"name": "furion",
+		"alt_names": [
+			"Prophet",
+			"np"
+		],
+		"primary_attr": 3,
+		"jungle": true
+	},
+	{
+		"name": "life_stealer",
+		"alt_names": [
+			"Naix",
+			"ls"
+		],
+		"primary_attr": 1,
+		"jungle": true
+	},
+	{
+		"name": "dark_seer",
+		"alt_names": [
+			"Ishkafel",
+			"ds"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "clinkz",
+		"alt_names": [
+			"Bone Fletcher"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "omniknight",
+		"alt_names": [
+			"Purist Thunderwrath",
+			"ok"
+		],
+		"primary_attr": 1,
+		"support": true
+	},
+	{
+		"name": "enchantress",
+		"alt_names": [
+			"Aiushtha"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "huskar",
+		"alt_names": [
+			"Sacred Warrior"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "night_stalker",
+		"alt_names": [
+			"Balanar",
+			"ns"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "broodmother",
+		"alt_names": [
+			"Black Archnia",
+			"bm"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "bounty_hunter",
+		"alt_names": [
+			"Gondar",
+			"bh"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "weaver",
+		"alt_names": [
+			"Nerubian Weaver",
+			"Anubseran"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "jakiro",
+		"alt_names": [
+			"Twin Head Dragon"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "batrider",
+		"alt_names": [
+			"Jinzakk",
+			"br"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "chen",
+		"alt_names": [
+			"Holy Knight"
+		],
+		"primary_attr": 3,
+		"support": true,
+		"jungle": true
+	},
+	{
+		"name": "spectre",
+		"alt_names": [
+			"Mercurial"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "doom_bringer",
+		"alt_names": [
+			"Lucifer"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "ancient_apparition",
+		"alt_names": [
+			"Kaldr",
+			"aa"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "ursa",
+		"alt_names": [
+			"Ulfsaar"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "spirit_breaker",
+		"alt_names": [
+			"Barathrum",
+			"sb"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "gyrocopter",
+		"alt_names": [
+			"Aurel Vlaicu",
+			"gc"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "alchemist",
+		"alt_names": [
+			"Razzil Darkbrew"
+		],
+		"primary_attr": 1,
+		"mid": true
+	},
+	{
+		"name": "invoker",
+		"alt_names": [
+			"Kael"
+		],
+		"primary_attr": 3,
+		"mid": true,
+		"carry": true
+	},
+	{
+		"name": "silencer",
+		"alt_names": [
+			"Nortrom"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "obsidian_destroyer",
+		"alt_names": [
+			"Harbinger",
+			"od"
+		],
+		"primary_attr": 3,
+		"mid": true,
+		"carry": true
+	},
+	{
+		"name": "lycan",
+		"alt_names": [
+			"Banehallow"
+		],
+		"primary_attr": 1,
+		"jungle": true
+	},
+	{
+		"name": "brewmaster",
+		"alt_names": [
+			"Pandaren Brewmaster",
+			"Mangix",
+			"bm"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "shadow_demon",
+		"alt_names": [
+			"Eredar",
+			"sd"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "lone_druid",
+		"alt_names": [
+			"Syllabear",
+			"ld"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "chaos_knight",
+		"alt_names": [
+			"Nessaj",
+			"ck"
+		],
+		"primary_attr": 1,
+		"carry": true
+	},
+	{
+		"name": "meepo",
+		"alt_names": [
+			"Geomancer"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "treant",
+		"alt_names": [
+			"Rooftrellen",
+			"tp"
+		],
+		"primary_attr": 1,
+		"support": true
+	},
+	{
+		"name": "ogre_magi",
+		"alt_names": [
+			"Aggron Stonebreaker",
+			"om"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "undying",
+		"alt_names": [
+			"Dirge"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "rubick",
+		"alt_names": [
+			"Grand Magus"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "disruptor",
+		"alt_names": [
+			"Thrall"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "nyx_assassin",
+		"alt_names": [
+			"Nerubian Assassin",
+			"Anubarak",
+			"na"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "naga_siren",
+		"alt_names": [
+			"Slithice",
+			"ns"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "keeper_of_the_light",
+		"alt_names": [
+			"Ezalor",
+			"kotl"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "wisp",
+		"alt_names": [
+			"Guardian Wisp"
+		],
+		"primary_attr": 1,
+		"support": true
+	},
+	{
+		"name": "visage",
+		"alt_names": [
+			"Necrolic"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "slark",
+		"alt_names": [
+			"Murloc Nightcrawler"
+		],
+		"primary_attr": 2
+	},
+	{
+		"name": "medusa",
+		"alt_names": [
+			"Gorgon"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "troll_warlord",
+		"alt_names": [
+			"Jahrakal",
+			"tw"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "centaur",
+		"alt_names": [
+			"Bradwarden",
+			"cw"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "magnataur",
+		"alt_names": [
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "shredder",
+		"alt_names": [
+			"Goblin Shredder",
+			"Rizzrak",
+			"ts"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "bristleback",
+		"alt_names": [
+			"Rigwarl",
+			"bb"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "tusk",
+		"alt_names": [
+			"Ymir"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "skywrath_mage",
+		"alt_names": [
+			"Dragonus",
+			"sm"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "abaddon",
+		"alt_names": [
+			"Lord of Avernus"
+		],
+		"primary_attr": 1,
+		"tank": true
+	},
+	{
+		"name": "elder_titan",
+		"alt_names": [
+			"Tauren Chieftain",
+			"Cairne Bloodhoof",
+			"et"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "legion_commander",
+		"alt_names": [
+			"Tresdin",
+			"lc"
+		],
+		"primary_attr": 1,
+		"carry": true,
+		"jungle": true
+	},
+	{
+		"name": "ember_spirit",
+		"alt_names": [
+			"Xin",
+			"es"
+		],
+		"primary_attr": 2,
+		"mid": true,
+		"carry": true
+	},
+	{
+		"name": "earth_spirit",
+		"alt_names": [
+			"Kaolin",
+			"es"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "terrorblade",
+		"alt_names": [
+			"Soul Keeper",
+			"tb"
+		],
+		"primary_attr": 2,
+		"carry": true
+	},
+	{
+		"name": "phoenix",
+		"alt_names": [
+			"Icarus"
+		],
+		"primary_attr": 1
+	},
+	{
+		"name": "oracle",
+		"alt_names": [
+			"Nerif"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "techies",
+		"alt_names": [
+			"Goblin Techies",
+			"Squee Spleen and Spoon"
+		],
+		"primary_attr": 3
+	},
+	{
+		"name": "winter_wyvern",
+		"alt_names": [
+			"Auroth",
+			"ww"
+		],
+		"primary_attr": 3,
+		"support": true
+	},
+	{
+		"name": "arc_warden",
+		"alt_names": [
+			"Zet",
+			"aw"
+		],
+		"primary_attr": 2,
+		"carry": true
+	}
+]

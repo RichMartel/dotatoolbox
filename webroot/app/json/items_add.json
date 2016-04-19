@@ -1,0 +1,653 @@
+[
+	{
+		"name": "blink",
+		"component": false
+	},
+	{
+		"name": "blades_of_attack"
+	},
+	{
+		"name": "broadsword"
+	},
+	{
+		"name": "chainmail"
+	},
+	{
+		"name": "claymore"
+	},
+	{
+		"name": "helm_of_iron_will"
+	},
+	{
+		"name": "javelin"
+	},
+	{
+		"name": "mithril_hammer"
+	},
+	{
+		"name": "platemail"
+	},
+	{
+		"name": "quarterstaff"
+	},
+	{
+		"name": "quelling_blade"
+	},
+	{
+		"name": "faerie_fire",
+		"component": false
+	},
+	{
+		"name": "ring_of_protection"
+	},
+	{
+		"name": "stout_shield",
+		"upgrades_to": [71, 125]
+	},
+	{
+		"name": "moon_shard",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "gauntlets"
+	},
+	{
+		"name": "slippers"
+	},
+	{
+		"name": "mantle"
+	},
+	{
+		"name": "branches"
+	},
+	{
+		"name": "belt_of_strength"
+	},
+	{
+		"name": "boots_of_elves"
+	},
+	{
+		"name": "robe"
+	},
+	{
+		"name": "circlet"
+	},
+	{
+		"name": "ogre_axe"
+	},
+	{
+		"name": "blade_of_alacrity"
+	},
+	{
+		"name": "staff_of_wizardry"
+	},
+	{
+		"name": "ultimate_orb"
+	},
+	{
+		"name": "gloves"
+	},
+	{
+		"name": "lifesteal"
+	},
+	{
+		"name": "ring_of_regen"
+	},
+	{
+		"name": "sobi_mask"
+	},
+	{
+		"name": "boots",
+		"upgrades_to": [48, 50, 63, 180, 214]
+	},
+	{
+		"name": "gem",
+		"component": false
+	},
+	{
+		"name": "cloak"
+	},
+	{
+		"name": "talisman_of_evasion",
+		"upgrades_to": [139, 229, 210]
+	},
+	{
+		"name": "magic_stick",
+		"upgrades_to": [36]
+	},
+	{
+		"name": "magic_wand",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "ghost",
+		"upgrades_to": [176]
+	},
+	{
+		"name": "clarity",
+		"component": false
+	},
+	{
+		"name": "enchanted_mango",
+		"component": false
+	},
+	{
+		"name": "flask",
+		"component": false
+	},
+	{
+		"name": "dust",
+		"component": false
+	},
+	{
+		"name": "bottle",
+		"component": false
+	},
+	{
+		"name": "ward_observer",
+		"component": false
+	},
+	{
+		"name": "ward_sentry",
+		"component": false
+	},
+	{
+		"name": "tango",
+		"component": false
+	},
+	{
+		"name": "courier",
+		"component": false
+	},
+	{
+		"name": "tpscroll",
+		"component": false
+	},
+	{
+		"name": "travel_boots",
+		"upgrade": true,
+		"upgrades_to": [220],
+		"no_stack": [50, 63, 180, 231, 214]
+	},
+	{
+		"name": "travel_boots_2",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [50, 63, 180, 231, 214]
+	},
+	{
+		"name": "phase_boots",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [48, 220, 63, 180, 231, 214]
+	},
+	{
+		"name": "demon_edge"
+	},
+	{
+		"name": "eagle"
+	},
+	{
+		"name": "reaver"
+	},
+	{
+		"name": "relic"
+	},
+	{
+		"name": "hyperstone"
+	},
+	{
+		"name": "ring_of_health"
+	},
+	{
+		"name": "void_stone"
+	},
+	{
+		"name": "mystic_staff"
+	},
+	{
+		"name": "energy_booster"
+	},
+	{
+		"name": "point_booster"
+	},
+	{
+		"name": "vitality_booster"
+	},
+	{
+		"name": "power_treads",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [48, 220, 50, 180, 231, 214]
+	},
+	{
+		"name": "hand_of_midas",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "oblivion_staff",
+		"upgrade": true,
+		"upgrades_to": [98]
+	},
+	{
+		"name": "pers",
+		"upgrade": true,
+		"upgrades_to": [110, 123, 226, 145]
+	},
+	{
+		"name": "poor_mans_shield",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "bracer",
+		"upgrade": true,
+		"upgrades_to": [185]
+	},
+	{
+		"name": "wraith_band",
+		"upgrade": true,
+		"upgrades_to": [212]
+	},
+	{
+		"name": "null_talisman",
+		"upgrade": true,
+		"upgrades_to": [104, 190]
+	},
+	{
+		"name": "mekansm",
+		"upgrade": true,
+		"upgrades_to": [231]
+	},
+	{
+		"name": "vladmir",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "buckler",
+		"upgrade": true,
+		"upgrades_to": [242, 79]
+	},
+	{
+		"name": "ring_of_basilius",
+		"upgrade": true,
+		"upgrades_to": [212, 81]
+	},
+	{
+		"name": "pipe",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "urn_of_shadows",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "headdress",
+		"upgrade": true,
+		"upgrades_to": [79, 81, 90]
+	},
+	{
+		"name": "sheepstick",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "orchid",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "cyclone",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "aether_lens",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "force_staff",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "dagon",
+		"upgrade": true,
+		"upgrades_to": [201]
+	},
+	{
+		"name": "dagon_2",
+		"upgrade": true,
+		"upgrades_to": [202]
+	},
+	{
+		"name": "dagon_3",
+		"upgrade": true,
+		"upgrades_to": [203]
+	},
+	{
+		"name": "dagon_4",
+		"upgrade": true,
+		"upgrades_to": [204]
+	},
+	{
+		"name": "dagon_5",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "necronomicon",
+		"upgrade": true,
+		"upgrades_to": [193]
+	},
+	{
+		"name": "necronomicon_2",
+		"upgrade": true,
+		"upgrades_to": [194]
+	},
+	{
+		"name": "necronomicon_3",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "ultimate_scepter",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "refresher",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "assault",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "heart",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "black_king_bar",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "shivas_guard",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "bloodstone",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "sphere",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "lotus_orb",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "vanguard",
+		"upgrade": true,
+		"upgrades_to": [242]
+	},
+	{
+		"name": "crimson_guard",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "blade_mail",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "soul_booster",
+		"upgrade": true,
+		"upgrades_to": [235, 121]
+	},
+	{
+		"name": "hood_of_defiance",
+		"upgrade": true,
+		"upgrades_to": [90]
+	},
+	{
+		"name": "rapier",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "monkey_king_bar",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "radiance",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "butterfly",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "greater_crit",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "basher",
+		"upgrade": true,
+		"upgrades_to": [208]
+	},
+	{
+		"name": "bfury",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "manta",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "lesser_crit",
+		"upgrade": true,
+		"upgrades_to": [141]
+	},
+	{
+		"name": "dragon_lance",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "armlet",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "invis_sword",
+		"upgrade": true,
+		"upgrades_to": [249]
+	},
+	{
+		"name": "silver_edge",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "sange_and_yasha",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "satanic",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [168, 172]
+	},
+	{
+		"name": "mjollnir",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "skadi",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [168]
+	},
+	{
+		"name": "sange",
+		"upgrade": true,
+		"upgrades_to": [210, 249, 154]
+	},
+	{
+		"name": "helm_of_the_dominator",
+		"upgrade": true,
+		"upgrades_to": [156],
+		"no_stack": [168, 172]
+	},
+	{
+		"name": "maelstrom",
+		"upgrade": true
+	},
+	{
+		"name": "desolator",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [164, 172, 160, 156]
+	},
+	{
+		"name": "yasha",
+		"upgrade": true,
+		"upgrades_to": [154, 147]
+	},
+	{
+		"name": "mask_of_madness",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [168, 164, 156]
+	},
+	{
+		"name": "diffusal_blade",
+		"upgrade": true,
+		"upgrades_to": [196]
+	},
+	{
+		"name": "diffusal_blade_2",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "ethereal_blade",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "soul_ring",
+		"upgrade": true,
+		"upgrades_to": [121]
+	},
+	{
+		"name": "arcane_boots",
+		"upgrade": true,
+		"upgrades_to": [231],
+		"no_stack": [48, 220, 50, 63, 214]
+	},
+	{
+		"name": "octarine_core",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "orb_of_venom",
+		"upgrades_to": [160]
+	},
+	{
+		"name": "ancient_janggo",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "medallion_of_courage",
+		"upgrade": true,
+		"upgrades_to": [229]
+	},
+	{
+		"name": "solar_crest",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "smoke_of_deceit",
+		"component": false
+	},
+	{
+		"name": "veil_of_discord",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "guardian_greaves",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [48, 220, 50, 63, 214]
+	},
+	{
+		"name": "rod_of_atos",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "iron_talon",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "abyssal_blade",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "heavens_halberd",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "ring_of_aquila",
+		"component": false,
+		"upgrade": true
+	},
+	{
+		"name": "tranquil_boots",
+		"component": false,
+		"upgrade": true,
+		"no_stack": [48, 220, 50, 63, 180, 231]
+	},
+	{
+		"name": "shadow_amulet"
+	},
+	{
+		"name": "glimmer_cape",
+		"component": false,
+		"upgrade": true
+	}
+]

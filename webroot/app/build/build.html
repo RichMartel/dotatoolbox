@@ -1,0 +1,105 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<img *ngFor="#hero of heroes_str" src="{{hero.image}}" class="img card-img" style="cursor: pointer;" width="{{imageWidth}}" (click)="select(hero)" title="{{hero.localized_name}}">
+		</div>
+		<div class="col-md-4">
+			<img *ngFor="#hero of heroes_agi" src="{{hero.image}}" class="img card-img" style="cursor: pointer;" width="{{imageWidth}}" (click)="select(hero)" title="{{hero.localized_name}}">
+		</div>
+		<div class="col-md-4">
+			<img *ngFor="#hero of heroes_int" src="{{hero.image}}" class="img card-img" style="cursor: pointer;" width="{{imageWidth}}" (click)="select(hero)" title="{{hero.localized_name}}">
+		</div>
+	</div>
+	<br>
+	<div *ngIf="selectedHero">
+		<div>
+			<div>
+				<h2 style="text-align: center;">{{selectedHero.localized_name}}</h2>
+				<img src="{{selectedImage}}" class="center-block img img-rounded" title="{{selectedHero.localized_name}}">
+			</div>
+		</div>
+		<br>
+		<div class="row container-fluid">
+			<div class="card card-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="clearfix">
+					<h3 class="pull-left">All skill</h3>
+					<div class="pull-right">
+						<span>Winrate: {{selectedHero.winrate_all | number:"1.0-0"}}%</span><br>
+						<span>Level: {{getLevel_all()}}</span>
+					</div>
+				</div>
+				<div>
+					<div>Build budget: {{(selectedHero.gpm_all * endGame).toFixed(0)}}</div>
+					<a *ngFor="#item of items_all" href="{{item.link}}"><img src="{{item.image}}" class="img" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_all * 100).toFixed(0)}}%"></a>
+					<br><br><div *ngIf="items_all_early.length > 0">Early options:</div>
+					<a *ngFor="#item of items_all_early" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_all * 100).toFixed(0)}}%"></a>
+					<br><br><div>Late options:</div>
+					<a *ngFor="#item of items_all_late" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_all * 100).toFixed(0)}}%"></a>
+				</div>
+			</div>
+			<div class="card card-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="clearfix">
+					<h3 class="pull-left">High skill</h3>
+					<div class="pull-right">
+						<span>Winrate: {{selectedHero.winrate_high | number:"1.0-0"}}%</span><br>
+						<span>Level: {{getLevel_high()}}</span>
+					</div>
+				</div>
+				<div>
+					<div>Build budget: {{(selectedHero.gpm_high * endGame).toFixed(0)}}</div>
+					<a *ngFor="#item of items_high" href="{{item.link}}"><img src="{{item.image}}" class="img" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_high * 100).toFixed(0)}}%"></a>
+					<br><br><div *ngIf="items_high_early.length > 0">Early options:</div>
+					<a *ngFor="#item of items_high_early" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_high * 100).toFixed(0)}}%"></a>
+					<br><br><div>Late options:</div>
+					<a *ngFor="#item of items_high_late" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_high * 100).toFixed(0)}}%"></a>
+				</div>
+			</div>
+			<div class="card card-block col-lg-4 col-md-4 col-sm-4 col-xs-1">
+				<div class="clearfix">
+					<h3 class="pull-left">Pro skill</h3>
+					<div class="pull-right">
+						<span>Winrate: {{selectedHero.winrate_pro | number:"1.0-0"}}%</span><br>
+						<span>Level: {{getLevel_pro()}}</span>
+					</div>
+				</div>
+				<div>
+					<div>Build budget: {{(selectedHero.gpm_pro * endGame).toFixed(0)}}</div>
+					<a *ngFor="#item of items_pro" href="{{item.link}}"><img src="{{item.image}}" class="img" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_pro * 100).toFixed(0)}}%"></a>
+					<br><br><div *ngIf="items_pro_early.length > 0">Early options:</div>
+					<a *ngFor="#item of items_pro_early" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_pro * 100).toFixed(0)}}%"></a>
+					<br><br><div>Late options:</div>
+					<a *ngFor="#item of items_pro_late" href="{{item.link}}"><img src="{{item.image}}" class="img" width="{{imageWidth}}" title="{{item.localized_name}} ({{item.cost}}) | WR: {{item.winrate.toFixed(0)}}% | BR: {{(item.matches / selectedHero.matches_pro * 100).toFixed(0)}}%"></a>
+				</div>
+			</div>
+		</div>
+		<div class="card card-block">
+			<a href="http://dota2.gamepedia.com/{{selectedHero.localized_name}}#Recommended_items">Dota 2 Wiki Recommended Items: {{selectedHero.localized_name}}</a><br>
+			<a href="http://devilesk.com/dota2/apps/hero-calculator/">devilesk.com Dota 2 Hero Calculator</a><br>
+			<a href="http://www.dota2.com/workshop/builds">Dota 2 Hero Builds</a><br>
+		</div>
+	</div>
+	<div *ngIf="!selectedHero">
+		<div class="jumbotron">
+			<div class="container-fluid">
+				<h1 style="text-align: center;">Dota Build Tool</h1>
+				<br>
+				<h4>What is this?</h4>
+				<ul style="text-shadow: none;">
+					<li>This is an automatic item build creator for the game <a href="http://blog.dota2.com/">Dota 2</a></li>
+					<li>It uses statistics (popularity, winrates, etc.) to create the item build listings</li>
+					<li>There are 3 builds shown for each hero: &quot;All skill&quot; (any MMR), &quot;High skill&quot; (> 3800 MMR), &quot;Pro skill&quot; (tournaments)</li>
+					<li>It budgets the hero\'s ability to buy items based on the average GPM for that hero, at that skill, by the 35 minute mark</li>
+				</ul>
+				<h4>How to use?</h4>
+				<ul style="text-shadow: none;">
+					<li>Click on a hero at the top</li>
+					<li>Suggested build items are under &quot;Build&quot;</li>
+					<li>Possible early item options are under &quot;Early options&quot;</li>
+					<li>Possible late item options are under &quot;Late options&quot;</li>
+					<li>Item tooltips will give you the following data: itemname (cost) | WR: winrate | BR: buildrate</li>
+					<li>Right click any item and select &quot;Open link in a new tab&quot; to look up the DotaBuff information for that item
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+{
+	"name": "dotatoolbox",
+	"version": "1.0.0",
+	"description": "Applications and tools for the game Dota 2",
+	"main": "server.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RichMartel/dotatoolbox"
+	},
+	"keywords": [
+	],
+	"author": "RichMartel (NoMercy)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/RichMartel/dotatoolbox/issues"
+	},
+	"homepage": "https://dotatoolbox.com",
+	"dependencies": {
+		"x-ray": "^2",
+		"lodash": "^4",
+		"express": "^4"
+	},
+	"devDependencies": {
+		"mocha": "^2"
+	}
+}
