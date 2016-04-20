@@ -28,6 +28,7 @@
 			this.items_pro = [];
 			this.items_pro_early = [];
 			this.items_pro_late = [];
+			this.wardsCost = 0;
 			heroService.heroes$.subscribe(d => {
 				this.heroes = heroService.heroes;
 				for (var i = 0; i < this.heroes.length; i++) {
@@ -72,7 +73,11 @@
 			this.items_pro = [];
 			this.items_pro_early = [];
 			this.items_pro_late = [];
-			var budget = this.selectedHero.gpm_all * this.endGame;
+			this.wardsCost = 0;
+			if (this.selectedHero.support) {
+				this.wardsCost = 1000;
+			}
+			var budget = this.selectedHero.gpm_all * this.endGame - this.wardsCost;
 			var numberSlots = 6;
 			for (var i = 0; i < this.selectedHero.items_all.length; i++) {
 				var item = this.selectedHero.items_all[i];
@@ -123,7 +128,7 @@
 					}
 				}
 			}
-			var budget = this.selectedHero.gpm_high * this.endGame;
+			var budget = this.selectedHero.gpm_high * this.endGame - this.wardsCost;
 			var numberSlots = 6;
 			for (var i = 0; i < this.selectedHero.items_high.length; i++) {
 				var item = this.selectedHero.items_high[i];
@@ -174,7 +179,7 @@
 					}
 				}
 			}
-			var budget = this.selectedHero.gpm_pro * this.endGame;
+			var budget = this.selectedHero.gpm_pro * this.endGame - this.wardsCost;
 			var numberSlots = 6;
 			for (var i = 0; i < this.selectedHero.items_pro.length; i++) {
 				var item = this.selectedHero.items_pro[i];
