@@ -35,6 +35,8 @@
 	})
 	.Class({
 		constructor: [app.HeroService, function(heroService) {
+			ga('set', 'page', '/picker');
+			ga('send', 'pageview');
 			this.heroes = heroService.heroes;
 			heroService.heroes$.subscribe(d => {
 				this.heroes = heroService.heroes;

@@ -5,6 +5,8 @@
 	})
 	.Class({
 		constructor: [app.HeroService, function(heroService) {
+			ga('set', 'page', '/build');
+			ga('send', 'pageview');
 			this.heroes = heroService.heroes;
 			this.heroes_str = [];
 			this.heroes_agi = [];

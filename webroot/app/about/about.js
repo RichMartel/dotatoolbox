@@ -5,6 +5,8 @@
 	})
 	.Class({
 		constructor: [function() {
+			ga('set', 'page', '/about');
+			ga('send', 'pageview');
 		}]
 	});
 
