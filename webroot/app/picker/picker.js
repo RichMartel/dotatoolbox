@@ -52,7 +52,6 @@
 			if (window.innerWidth < 544) {
 				this.imageWidth = 40
 			}
-			this.imageHeight = this.imageWidth * .56
 			this.touchBrowser = false;
 			if ('ontouchstart' in document.documentElement) {
 				this.touchBrowser = true;

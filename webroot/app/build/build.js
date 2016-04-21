@@ -63,7 +63,6 @@
 		},
 		select: function(hero) {
 			this.selectedHero = hero;
-			this.selectedImage = this.selectedHero.image.replace(/_sb/, '_lg');
 			this.items_all = [];
 			this.items_all_early = [];
 			this.items_all_late = [];

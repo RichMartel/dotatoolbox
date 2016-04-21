@@ -36,6 +36,11 @@
 			path: '/build',
 			name: 'Build',
 			component: app.BuildComponent
+		},
+		{
+			path: '/friend',
+			name: 'Friend',
+			component: app.FriendComponent
 		}
 	])(app.AppComponent);
 

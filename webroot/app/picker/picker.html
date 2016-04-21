@@ -21,14 +21,14 @@
 				<button class="btn btn-primary center-block" (click)="removeAllSelected()">Clear</button>
 			</div>
 			<br>
-			<div class="row" style="min-height: {{imageHeight}}px;">
+			<div class="row">
 				<div class="col-md-6 col-xs-12">
 					<div><h6 class="text-danger">Enemy team:</h6></div>
-					<img *ngFor="#hero of enemiesSelected" (click)="removeEnemiesSelected(hero)" src="{{hero.image}}" class="img" width="{{imageWidth}}" title="Click to remove">
+					<img *ngFor="#hero of enemiesSelected" (click)="removeEnemiesSelected(hero)" src="{{hero.imageLarge}}" class="img" width="{{imageWidth}}" title="Click to remove">
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div><h6 class="text-success">My team:</h6></div>
-					<img *ngFor="#hero of friendsSelected" (click)="removeFriendsSelected(hero)" src="{{hero.image}}" class="img" width="{{imageWidth}}" title="Click to remove">
+					<img *ngFor="#hero of friendsSelected" (click)="removeFriendsSelected(hero)" src="{{hero.imageLarge}}" class="img" width="{{imageWidth}}" title="Click to remove">
 				</div>
 			</div>
 			<br>

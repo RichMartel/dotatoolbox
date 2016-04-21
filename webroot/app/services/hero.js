@@ -53,6 +53,8 @@
 				}
 				for (var i = 0; i < this.heroes.length; i++) {
 					this.heroes[i].image = 'http://cdn.dota2.com/apps/dota2/images/heroes/' + this.heroes[i].name + '_sb.png';
+					this.heroes[i].imageLarge = 'http://cdn.dota2.com/apps/dota2/images/heroes/' + this.heroes[i].name + '_lg.png';
+					this.heroes[i].imageVert = 'http://cdn.dota2.com/apps/dota2/images/heroes/' + this.heroes[i].name + '_vert.jpg';
 					this.heroes[i].link = 'http://dota2.gamepedia.com/' + this.heroes[i].localized_name;
 					var heroDotamax = _.find(heroesDotamax, {'name': this.heroes[i].name});
 					heroDotamax.items_all.sort(function(a, b) {
