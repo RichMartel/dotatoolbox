@@ -55,8 +55,10 @@
 				player: 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=6A2645535F4019083D3EB51D0002B7A3&steamids=',
 				dota2: 'http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=6A2645535F4019083D3EB51D0002B7A3&include_appinfo=1&include_played_free_games=1&appids_filter[0]=570&steamid='
 			};
+			this.showLoader = false;
 		}],
 		get: function() {
+			this.showLoader = true;
 			this.http.get(this.corsproxy + this.apiurl.friends + this.player.steamid).map(res => res.json())
 				.subscribe(data => {
 					this.friends = data.friendslist.friends;
@@ -77,6 +79,7 @@
 							this.player.loccountrycode = player.loccountrycode;
 							this.player.locstatecode = player.locstatecode;
 							this.player.loccityid = player.loccityid;
+							Sortable.init();
 						});
 					this.http.get(this.corsproxy + this.apiurl.dota2 + this.player.steamid).map(res => res.json())
 						.subscribe(data => {
@@ -87,6 +90,7 @@
 						var d = new Date(0);
 						d.setUTCSeconds(this.friends[i].friend_since);
 						this.friends[i].friend_since = d;
+						this.showLoader = true;
 						this.http.get(this.corsproxy + this.apiurl.player + this.friends[i].steamid).map(res => res.json())
 						.subscribe(data => {
 							var player = data.response.players[0];
@@ -105,7 +109,7 @@
 							friend.loccountrycode = player.loccountrycode;
 							friend.locstatecode = player.locstatecode;
 							friend.loccityid = player.loccityid;
-							Sortable.init();
+							this.showLoader = false;
 						});
 						this.http.get(this.corsproxy + this.apiurl.dota2 + this.friends[i].steamid).map(res => {
 							var steamid = res.url.replace(/.*steamid=(.*)/, '$1');
@@ -123,7 +127,6 @@
 									friend.playtime_2weeks = Math.round(data.response.games[0].playtime_2weeks / 60);
 								}
 							}
-							Sortable.init();
 						});
 					}
 				});
