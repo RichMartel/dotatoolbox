@@ -1,4 +1,13 @@
 <div class="container-fluid">
+	<form (ngSubmit)="get()">
+		<div class="input-group">
+			<input type="search" class="form-control" placeholder="steamid64" autofocus [(ngModel)]="player.steamid">
+			<span class="input-group-btn">
+				<button class="btn btn-secondary" type="button" (click)="get()">Go</button>
+			</span>
+		</div>
+	</form>
+	<br>
 	<div *ngIf="friends.length > 0">
 		<h6>Friends:</h6>
 		<div class="table-responsive">
@@ -6,30 +15,30 @@
 				<thead>
 					<tr>
 						<th>Player</th>
-						<th>Friend since</th>
-						<th>Last logoff</th>
 						<th>Real name</th>
 						<th>Location</th>
-						<th>Total playtime</th>
-						<th>2-weeks playtime</th>
+						<th>Friend since</th>
+						<th>Last Steam login</th>
+						<th>Dota lifetime hours</th>
+						<th>Hours last 2 weeks</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td><a href="{{player.profileurl}}"><img src="{{player.avatar}}"><span style="margin-left: 10px;">{{player.personaname}}</span></a></td>
-						<td>{{player.timecreated | date:'y'}}-{{player.timecreated | date:'MM'}}-{{player.timecreated | date:'dd'}}</td>
-						<td>{{player.lastlogoff | date:'y'}}-{{player.lastlogoff | date:'MM'}}-{{player.lastlogoff | date:'dd'}}</td>
 						<td>{{player.realname}}</td>
 						<td>{{player.loccountrycode}} {{player.locstatecode}}</td>
+						<td>{{player.timecreated | date:'y'}}-{{player.timecreated | date:'MM'}}-{{player.timecreated | date:'dd'}}</td>
+						<td>{{player.lastlogoff | date:'y'}}-{{player.lastlogoff | date:'MM'}}-{{player.lastlogoff | date:'dd'}}</td>
 						<td>{{player.playtime_forever}}</td>
 						<td>{{player.playtime_2weeks}}</td>
 					</tr>
 					<tr *ngFor="#friend of friends">
 						<td><a href="{{friend.profileurl}}"><img src="{{friend.avatar}}"><span style="margin-left: 10px;">{{friend.personaname}}</span></a></td>
-						<td>{{friend.friend_since | date:'y'}}-{{friend.friend_since | date:'MM'}}-{{friend.friend_since | date:'dd'}}</td>
-						<td>{{friend.lastlogoff | date:'y'}}-{{friend.lastlogoff | date:'MM'}}-{{friend.lastlogoff | date:'dd'}}</td>
 						<td>{{friend.realname}}</td>
 						<td>{{friend.loccountrycode}} {{friend.locstatecode}}</td>
+						<td>{{friend.friend_since | date:'y'}}-{{friend.friend_since | date:'MM'}}-{{friend.friend_since | date:'dd'}}</td>
+						<td>{{friend.lastlogoff | date:'y'}}-{{friend.lastlogoff | date:'MM'}}-{{friend.lastlogoff | date:'dd'}}</td>
 						<td>{{friend.playtime_forever}}</td>
 						<td>{{friend.playtime_2weeks}}</td>
 					</tr>
